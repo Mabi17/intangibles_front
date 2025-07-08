@@ -1,0 +1,8 @@
+.full-screen-background {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../../../public/images/fondo_intangibles.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

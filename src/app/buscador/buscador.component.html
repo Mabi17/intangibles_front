@@ -1,0 +1,22 @@
+<form (submit)="emitirFiltro(); $event.preventDefault();">
+  <div class="input-group mb-3">
+    <input type="text" [(ngModel)]="query" name="query" class="form-control" placeholder="Buscar..." required>
+    <button type="submit" class="btn btn-dark">Buscar</button>
+  </div>
+
+  <div class="mb-3 d-flex justify-content-center">
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="categoria" [(ngModel)]="categoriaSeleccionada" value="todos">
+      <label class="form-check-label">Todos</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="categoria" [(ngModel)]="categoriaSeleccionada" value="productos">
+      <label class="form-check-label">Hombre</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="categoria" [(ngModel)]="categoriaSeleccionada" value="servicios">
+      <label class="form-check-label">Mujer</label>
+    </div>
+  </div>
+</form>
+  
